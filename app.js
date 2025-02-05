@@ -5,6 +5,9 @@ const app = express();
 // salviamo la porta del server
 const port = 3000;
 
+// collegamento ai file statici
+app.use (express.static('public'));
+
 // definiamo la prima rotta
 app.get('/', (req, res) => {
     res.send('hello word')
