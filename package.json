@@ -1,0 +1,19 @@
+{
+  "name": "express-blog-routing",
+  "version": "1.0.0",
+  "description": "Personal Blog exercise",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Giunta-Giovanni/express-blog-routing.git"
+  },
+  "author": "Giunta Giovanni",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Giunta-Giovanni/express-blog-routing/issues"
+  },
+  "homepage": "https://github.com/Giunta-Giovanni/express-blog-routing#readme"
+}
