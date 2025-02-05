@@ -5,3 +5,12 @@ const app = express();
 // salviamo la porta del server
 const port = 3000;
 
+// definiamo la prima rotta
+app.get('/', (req, res) => {
+    res.send('hello word')
+});
+
+// avviamo il server mettendolo in ascolto sulla porta indicata
+app.listen (port,() => {
+    console.log (`Example app listening on port: ${port}`)
+});
