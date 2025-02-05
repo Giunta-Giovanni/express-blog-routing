@@ -3,7 +3,7 @@ const express = require ('express');
 // creiamo una variabile router il cui valore sarà un istanza di express.Router()
 const router = express.Router();
 // importiamo l'array con i post e lo salviamo in una variabile
-const myPosts = require ('../data/posts')
+const myPosts = require ('../data/data_posts')
 
 // definiamo le rotte rimuovendo il nome dalla risposta uri
 // index
