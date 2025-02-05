@@ -4,6 +4,8 @@ const express = require ('express');
 const app = express();
 // salviamo la porta del server
 const port = 3000;
+// importiamo il router
+const postsRouter = require ('./routers/posts')
 
 // collegamento ai file statici
 app.use (express.static('public'));
@@ -12,6 +14,9 @@ app.use (express.static('public'));
 app.get('/', (req, res) => {
     res.send('hello word')
 });
+
+// tramite la funzione use indichiamo che esistono nuove rotte
+app.use ("/posts", postsRouter);
 
 // avviamo il server mettendolo in ascolto sulla porta indicata
 app.listen (port,() => {
