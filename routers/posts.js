@@ -6,21 +6,27 @@ const router = express.Router();
 const myPosts = require ('../data/posts')
 
 // definiamo le rotte rimuovendo il nome dalla risposta uri
+// index
 router.get('/', function (req,res){
     res.json(myPosts);
 });
+// show
 router.get('/:id', function (req,res){
     res.json (myPosts[req.params.id])
 });
+// store
 router.post('/', function (req,res){
     res.send ('crea un nuovo post')
 });
+// update
 router.put('/:id', function (req,res){
     res.send (`modifica interamente il post numero ${req.params.id}`)
 });
+// modify
 router.patch('/:id', function (req,res){
     res.send (`modifica parzialmente il post numero ${req.params.id}`)
 });
+// destroy
 router.delete('/:id', function (req,res){
     res.send (`elimina il post numero ${req.params.id}`)
 });
